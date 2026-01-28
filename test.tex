@@ -1,0 +1,85 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[letterpaper,top=0.75in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{setspace}
+\usepackage{mathptmx}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage{hyperref}
+\captionsetup{justification=justified}
+\usepackage{float}  % Add this in the preamble
+\captionsetup{skip=5pt} % controls space after caption (default ~10pt)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{titlesec}
+\usepackage{csvsimple}
+\usepackage{pdfcomment}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{seqsplit}
+
+\fancyhf{}
+\fancyhead[R]{ESC204}
+\fancyhead[L]{University of Toronto}
+\fancyfoot[C]{\thepage}
+
+\newcommand{\mm}{\operatorname{mm}}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titlespacing*{\section}{0pt}{0.3em}{0.3em}      % less space before and after section
+\titlespacing*{\subsection}{0pt}{0.3em}{0.2em}   % less space before and after subsection
+
+\title{
+ \textbf{Latex Test}
+}
+
+\author{
+ \large{\textbf{Praxis III}} \\
+ \large{\textbf{ESC204}} \\
+ \\
+ Oscar Anacleto Krause (1011081222) \\ 
+ \vspace{0.9em}
+ \texttt{o.anacletokrause@mail.utoronto.ca} \\
+}
+\date{November 25, 2025}
+
+\begin{document}
+ \maketitle
+ \newpage
+
+\newpage
+
+
+\section{Introduction} \label{intro}
+
+TEST
+
+\newpage
+
+\appendix
+\renewcommand{\thesection}{Appendix~\Alph{section}}
+\renewcommand{\thetable}{A\arabic{table}} % <-- Add this line
+\setcounter{table}{0}                     % <-- Reset the table counter
+
+\nocite{*}
+
+\bibliographystyle{ieeetr}  
+\newpage
+\bibliography{bibliography}
+
+\end{document}
