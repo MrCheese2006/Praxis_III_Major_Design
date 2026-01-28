@@ -1,9 +1,15 @@
+def is_lore_master(name):
+    if name == "Hasnain" or name == "The stupid guy":
+        return True
+    else:
+        return False
+
 if __name__ == '__main__':
     print("Hello World!")
     print("Mass Arson")
     print("Hello there")
     print("gggg")
-    print(I_dont_like_praxis("George"))
+    print(is_lore_master("Jack"))
 
 
 
