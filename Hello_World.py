@@ -1,5 +1,5 @@
 def is_lore_master(name):
-    if name == "Hasnain" or name == "The stupid guy":
+    if name == "Hasnain" or name == "Jack":
         return True
     else:
         return False
