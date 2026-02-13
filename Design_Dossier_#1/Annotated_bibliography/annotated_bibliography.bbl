@@ -17,6 +17,12 @@
 \fi
 #2}}
 
+\bibitem{Canada_Wildfire}
+\BIBentryALTinterwordspacing
+``Wildfire facts.'' [Online]. Available: \url{https://www.canadawildfire.org/wildfirefacts}
+\BIBentrySTDinterwordspacing
+ \begin{quotation}\noindent This is a source on the basic fundamentals of how a Wildfire Operates at Canada. It provides how fires start especially explaining how lightning creates a majority of fires that are most destructive. The source also explains each type of fire, its behavior and the dangers provided by each type of fire. It also provides a short overview on the environmental aspects that allow a fire to grow, be born or die out. The source also gives short explanations on prevention. \end{quotation}
+
 \bibitem{Natural_Resources_Canada_2012}
 \BIBentryALTinterwordspacing
 N.~R. Canada, ``A lightning fire prediction system,'' 2012. [Online]. Available: \url{https://publications.gc.ca/collections/collection_2013/rncan-nrcan/Fo122-1-60-2012-eng.pdf}

@@ -1,0 +1,76 @@
+\documentclass[12pt, letterpaper, titlepage]{article}
+\usepackage[letterpaper,top=0.75in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{pdfcomment}
+\usepackage{xcolor}
+\usepackage{url}
+
+\fancyhf{}
+\fancyhead[R]{ESC204}
+\fancyhead[L]{University of Toronto}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titlespacing*{\section}{0pt}{0.3em}{0.3em}      % less space before and after section
+\titlespacing*{\subsection}{0pt}{0.3em}{0.2em}   % less space before and after subsection
+
+\title{
+ \textbf{\colorbox{red}{ENTER TITLE}}
+}
+
+\author{
+ \large{\textbf{\colorbox{red}{ENTER PROJECT NAME}}} \\
+ \large{\textbf{ESC204}} \\
+ \\
+ Daniel An (1011061333) \\ 
+ \vspace{0.9em}
+ \texttt{danielsc.an@mail.utoronto.ca} \\
+ Oscar Anacleto Krause (1011081222) \\ 
+ \vspace{0.9em}
+ \texttt{o.anacletokrause@mail.utoronto.ca} \\
+ Jack Edwards (1011740467) \\
+ \vspace{0.9em}
+ \texttt{jack.edwards@mail.utoronto.ca} \\
+ Mikeli Italiano (1011479400) \\
+ \vspace{0.9em}
+ \texttt{mikeli.italiano@mail.utoronto.ca} \\
+ Kerem \"{O}zkan (1011062289) \\
+ \vspace{0.9em}
+ \texttt{kerem.\"{o}zkan@mail.utoronto.ca} \\
+ Hasnain Syed (1010962308) \\
+ \vspace{0.9em}
+ \texttt{hasnain.syed@mail.utoronto.ca}
+}
+\date{\colorbox{red}{ENTER DUE DATE}}
+
+\begin{document}
+ \maketitle
+ \newpage
+
+\newpage
+
+\section{Introduction} \label{intro}
+Intro
+
+\renewcommand{\refname}{\centering Annotated Bibliography}
+
+\bibliographystyle{IEEEannot}
+\bibliography{bibliography.bib}
+
+\end{document}
