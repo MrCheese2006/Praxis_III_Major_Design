@@ -1,0 +1,586 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.23)  12 FEB 2026 23:22
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex"
+(c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+(c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)) (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count286
+\c@continuedfloat=\count287
+) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count288
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count289
+) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count290
+\float@exts=\toks19
+\float@box=\box53
+\@float@everytoks=\toks20
+\@floatcapt=\box54
+) (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks21
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen165
+)) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen166
+) (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen167
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip17
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks23
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks24
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks25
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (c:/texlive/2025/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box57
+\UL@hyphenbox=\box58
+\UL@skip=\skip54
+\UL@hook=\toks27
+\UL@height=\dimen174
+\UL@pe=\count303
+\UL@pixel=\dimen175
+\ULC@box=\box59
+Package: ulem 2019/11/18
+\ULdepth=\dimen176
+) (c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip55
+\RaggedLeftLeftskip=\skip56
+\RaggedRightLeftskip=\skip57
+\CenteringRightskip=\skip58
+\RaggedLeftRightskip=\skip59
+\RaggedRightRightskip=\skip60
+\CenteringParfillskip=\skip61
+\RaggedLeftParfillskip=\skip62
+\RaggedRightParfillskip=\skip63
+\JustifyingParfillskip=\skip64
+\CenteringParindent=\skip65
+\RaggedLeftParindent=\skip66
+\RaggedRightParindent=\skip67
+\JustifyingParindent=\skip68
+) (c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip69
+\f@nch@offset@elh=\skip70
+\f@nch@offset@erh=\skip71
+\f@nch@offset@olh=\skip72
+\f@nch@offset@orh=\skip73
+\f@nch@offset@elf=\skip74
+\f@nch@offset@erf=\skip75
+\f@nch@offset@olf=\skip76
+\f@nch@offset@orf=\skip77
+\f@nch@height=\skip78
+\f@nch@footalignment=\skip79
+\f@nch@widthL=\skip80
+\f@nch@widthC=\skip81
+\f@nch@widthR=\skip82
+\@temptokenb=\toks28
+) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box60
+\beforetitleunit=\skip83
+\aftertitleunit=\skip84
+\ttl@plus=\dimen177
+\ttl@minus=\dimen178
+\ttl@toksa=\toks29
+\titlewidth=\dimen179
+\titlewidthlast=\dimen180
+\titlewidthfirst=\dimen181
+) (c:/texlive/2025/texmf-dist/tex/latex/pdfcomment/pdfcomment.sty
+Package: pdfcomment 2018/11/01 pdfcomment.sty v2.4a - Josef Kleber (C) 2008-2012, 2015-2016, 2018
+ (c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
+ (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+\XKV@tempb@toks=\toks32
+)
+\XKV@depth=\count304
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@pc@count@i=\count305
+\c@pc@count@ii=\count306
+\c@pc@count@iii=\count307
+\c@pc@count@iv=\count308
+\pc@mathannot@box=\box61
+\pc@nullbox=\box62
+\pc@dima=\skip85
+\pc@dimb=\skip86
+\pc@Sposx=\skip87
+\pc@Sposy=\skip88
+\pc@Eposx=\skip89
+\pc@Eposy=\skip90
+\pc@column=\skip91
+\pc@box@width=\skip92
+\pc@box@height=\skip93
+\pc@box@depth=\skip94
+ (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+) (c:/texlive/2025/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
+ (c:/texlive/2025/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+ (c:/texlive/2025/texmf-dist/tex/generic/tracklang/tracklang.tex))) (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-savepos.sty
+Package: zref-savepos 2025-06-08 v2.36 Module savepos for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (c:/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+Package zref Info: New property list: savepos on input line 56.
+Package zref Info: New property: posx on input line 58.
+Package zref Info: New property: posy on input line 59.
+)
+\c@zref@unique=\count310
+ (c:/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count311
+\calc@Bcount=\count312
+\calc@Adimen=\dimen182
+\calc@Bdimen=\dimen183
+\calc@Askip=\skip95
+\calc@Bskip=\skip96
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count313
+\calc@Cskip=\skip97
+) (c:/texlive/2025/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2018/08/09 1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count314
+) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (c:/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/texlive/2025/texmf-dist/tex/latex/soulpos/soulpos.sty
+Package: soulpos 2021/10/15 v1.2 Fancy underlining
+\ulp@subcnt=\count315
+\ulp@cnt=\count316
+\ulp@out=\write3
+\ulp@in=\read2
+\ulwidth=\dimen184
+) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+ (c:/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+ (c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count317
+) (c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen185
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
+ (c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count320
+ (c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4066.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count321
+ (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen186
+ (c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count322
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
+)
+Package hyperref Info: Driver: hpdftex.
+ (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
+ (c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip98
+)
+Package zref Info: New property list: pdfcomment on input line 2735.
+Package zref Info: New property: PCPDFOBJID on input line 2736.
+) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count328
+) (./annotated_bibliography.aux)
+\openout1 = `annotated_bibliography.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=505.89pt
+* \textheight=686.56499pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count329
+\scratchdimen=\dimen189
+\scratchbox=\box63
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen190
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks34
+) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package soulpos Info: Loading soulutf8 on input line 20.
+ (c:/texlive/2025/texmf-dist/tex/generic/soul/soulutf8.sty
+Package: soulutf8 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+
+Package soulutf8 Warning: This package is obsolete,
+(soulutf8)                use the soul package directly. 
+(soulutf8)                 on input line 29.
+
+) (c:/texlive/2025/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks35
+\SOUL@lasttoken=\toks36
+\SOUL@syllable=\toks37
+\SOUL@cmds=\toks38
+\SOUL@buffer=\toks39
+\SOUL@token=\toks40
+\SOUL@syllgoal=\dimen191
+\SOUL@syllwidth=\dimen192
+\SOUL@charkern=\dimen193
+\SOUL@hyphkern=\dimen194
+\SOUL@dimen=\dimen195
+\SOUL@dimeni=\dimen196
+\SOUL@minus=\count335
+\SOUL@comma=\count336
+\SOUL@apo=\count337
+\SOUL@grave=\count338
+\SOUL@spaceskip=\skip99
+\SOUL@ttwidth=\dimen197
+\SOUL@uldp=\dimen198
+\SOUL@ulht=\dimen199
+))
+Package hyperref Info: Link coloring OFF on input line 20.
+ (./annotated_bibliography.out) (./annotated_bibliography.out)
+\@outlinefile=\write4
+\openout4 = `annotated_bibliography.out'.
+
+ (./annotated_bibliography.bbl
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+[]$\OT1/cmr/m/n/12 https : / / netzeroinsights . com / resources / key-[]technologies-[]driving-[]eective-[]wild^^Lre-[]management /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+\OT1/cmr/m/n/12 # : [] : text = Satellite % 20imaging % 20plays % 20a % 20pivotal ,[] dangerous % 20shifts % 20in % 20the %
+ []
+
+(c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) [1
+
+\openout3 = `annotated_bibliography.upa'.
+
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./annotated_bibliography.aux * soulpos - computing points - it may take a few seconds *
+\openout3 = `annotated_bibliography.upb'.
+
+ (./annotated_bibliography.upa))
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+ ***********
+Package rerunfilecheck Info: File `annotated_bibliography.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 17688 strings out of 467538
+ 310824 string characters out of 5423718
+ 737775 words of memory out of 5000000
+ 46361 multiletter control sequences out of 15000+600000
+ 633391 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 89i,5n,93p,1766b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on annotated_bibliography.pdf (2 pages, 47023 bytes).
+PDF statistics:
+ 46 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

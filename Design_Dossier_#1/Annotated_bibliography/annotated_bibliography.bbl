@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{Natural_Resources_Canada_2012}
+\BIBentryALTinterwordspacing
+N.~R. Canada, ``A lightning fire prediction system,'' 2012. [Online]. Available: \url{https://publications.gc.ca/collections/collection_2013/rncan-nrcan/Fo122-1-60-2012-eng.pdf}
+\BIBentrySTDinterwordspacing
+ \begin{quotation}\noindent This bulletin from Natural Resources Canada provides some statistics on the contribution of lightning-ignited wildfires to the overall impact on Canada, as well as a predictive model for determining the likelihood of ignition due to a lightning strike. Being from 2012, the information provided may still be current, with the statistics being validated by more recent sources [Kerem source]. However, it is possible the model provided may be outdated compared to more current research in this area. This source was relevant to our understanding of causes of forest fires, informing us on the prevalence of lightning in the formation and severity of wildfires. The authority of this source is relatively high as it comes from Natural Resources Canada, a government organization. The statistical information strikes appears to be accurate upon comparison with another source. The purpose of this bulletin is to present and describe the use of this predictive model in determining where lightning ignition will likely develop into a forest fire. \end{quotation}
+
+\bibitem{Copernicus_2024}
+\BIBentryALTinterwordspacing
+Copernicus, ``Wildfire impact: How is it monitored \& measured?'' Aug 2024. [Online]. Available: \url{https://climate.copernicus.eu/wildfire-impact-how-it-monitored-measured}
+\BIBentrySTDinterwordspacing
+ \begin{quotation}\noindent This article from the Climate Change Service discusses current ways of measuring the affect of wild fires on the Earth used by countries around the world, while also discussing current ways of monitoring wild fires and their affect on the surrounding environment. Being from 2024, this source provides extremely current information as it is only around a year and a half old and this same method is still in use by countries around the world indicating its staying power. It provided additional information on the effects of wildfires on the appearance of lightning and current methods used to track the damages of wild fire which was relevant in our understanding of how to mitigate the effects of wildfires and how wildfires themselves affect the potential for lighting which as discussed in other sources can lead to further fires. Given that this method is endorsed and used by the European commission, a multi-national governmental organization, the authority is fairly high. The information appears to be accurate based on the other sources that are referenced by the climate change service and the fact that the strategies used here are used across international borders and given their explicit explanations of the math and science behind the explained phenomenon. This is all thanks to its purpose of trying to educate common people on the effects of wildfires, how they are currently being tracked, and how their effect is measured on the environment to educate people on wildfires impact on climate change. \end{quotation}
+
+\bibitem{Net_Zero_Insights_2025}
+\BIBentryALTinterwordspacing
+S.~A. N, ``Key technologies driving effective wildfire management,'' Jun 2025. [Online]. Available: \url{https://netzeroinsights.com/resources/key-technologies-driving-effective-wildfire-management/#:~:text=Satellite%20imaging%20plays%20a%20pivotal,dangerous%20shifts%20in%20the%20environment.}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{Thomson_2025}
+\BIBentryALTinterwordspacing
+A.~Thomson, ``'wall of water': How sprinklers are saving homes from wildfires,'' Oct 2025. [Online]. Available: \url{https://www.cbc.ca/news/canada/nova-scotia/how-sprinklers-are-saving-homes-from-wildfires-9.6942238}
+\BIBentrySTDinterwordspacing
+ \begin{quotation}\noindent This article discusses the use of designated sprinkler systems to protect communities from wildfires in Nova Scotia. This article is current, being published by CBC News in October 2025. The article discusses the use of specialized sprinkler systems, which are a method of fire protection and mitigation in WUI communities and as such provides relevant information on current mitigation strategies. It mentions specifically, the effectiveness of the system in combating the Lake George and Long Lake wildfires, as well as the time and resources required to set up and maintain the system. The article is sufficiently reliable as it comes from a national news network and contains statements from specialists and witnesses to the events of the fires. While the sprinklers were shown to be effective here, the use of these systems in a wider range of scenarios is in dispute due to lack of fire test standards, variation of effectiveness in various conditions, and intense use of resources, which limits the accuracy of the provided information (see reference [29] in the RFP). In addition to describing the use of these sprinkler systems, the article also notes the province’s intention to purchase additional systems based upon their effectiveness. \end{quotation}
+
+\end{thebibliography}
