@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 FEB 2026 03:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 FEB 2026 03:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,9 +577,14 @@ Underfull \hbox (badness 2343) in paragraph at lines 42--42
 \OT1/cmr/m/n/12 tems, and en-vi-ron-men-tal im-pacts. It also men-tions the health cost as-so-ci-
  []
 
-)
 
-[2] (./annotated_bibliography.aux)
+
+[2])
+
+[3] (./annotated_bibliography.aux * soulpos - computing points - it may take a few seconds *
+\openout3 = `annotated_bibliography.upb'.
+
+ (./annotated_bibliography.upa))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -588,18 +593,18 @@ Package rerunfilecheck Info: File `annotated_bibliography.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17714 strings out of 473190
- 313561 string characters out of 5715801
+ 17721 strings out of 473190
+ 313732 string characters out of 5715801
  724850 words of memory out of 5000000
- 40732 multiletter control sequences out of 15000+600000
+ 40736 multiletter control sequences out of 15000+600000
  564507 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,93p,1755b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,5n,93p,1755b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on annotated_bibliography.pdf (2 pages, 49503 bytes).
+Output written on annotated_bibliography.pdf (3 pages, 49987 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 53 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

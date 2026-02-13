@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex annotated_bibliography"] 1770971247.02099 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1770971247.9862 0
+["bibtex annotated_bibliography"] 1770971807.92786 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1770971808.84971 0
   "./IEEEannot.bst" 1770957406.46014 61919 bf06423465058a2272d4ac4bdeb9eab7 ""
-  "./annotated_bibliography.bib" 1770971245.84695 7611 b63d5d96eef7ca350690747f0ba8f344 ""
-  "annotated_bibliography.aux" 1770971247.71575 423 4bd9b780ff23a7e0a81d3d420cbd73a6 "pdflatex"
+  "./annotated_bibliography.bib" 1770971807.70043 7709 b27c489ec91f3f4f0d096700f932c5ec ""
+  "annotated_bibliography.aux" 1770971808.59975 437 4aaac9bc0a7821e9c76606b071101ed7 "pdflatex"
   (generated)
   "annotated_bibliography.bbl"
   "annotated_bibliography.blg"
   (rewritten before read)
-["pdflatex"] 1770971247.13127 "/Users/daniel/Desktop/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1770971247.98633 0
+["pdflatex"] 1770971808.02974 "/Users/daniel/Desktop/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1770971808.84986 0
   "/Users/daniel/Desktop/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" 1770957406.46355 659 d92e16d397a9f59764537f3ff5ca3ad7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -122,15 +122,18 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769466276 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "annotated_bibliography.aux" 1770971247.71575 423 4bd9b780ff23a7e0a81d3d420cbd73a6 "pdflatex"
-  "annotated_bibliography.bbl" 1770971247.12902 8394 c64f47b588ffd0198a5a39d44c6365eb "bibtex annotated_bibliography"
-  "annotated_bibliography.out" 1770971247.56318 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "annotated_bibliography.aux" 1770971808.59975 437 4aaac9bc0a7821e9c76606b071101ed7 "pdflatex"
+  "annotated_bibliography.bbl" 1770971808.02711 8492 b3065e2f3b0892b8682fd592bba496a7 "bibtex annotated_bibliography"
+  "annotated_bibliography.out" 1770971808.4438 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "annotated_bibliography.tex" 1770957406.46355 659 d92e16d397a9f59764537f3ff5ca3ad7 ""
-  "annotated_bibliography.upb" 1770957898.29995 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "annotated_bibliography.upa" 1770971808.45316 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "annotated_bibliography.upb" 1770971808.60035 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "annotated_bibliography.aux"
   "annotated_bibliography.log"
   "annotated_bibliography.out"
   "annotated_bibliography.pdf"
   "annotated_bibliography.upa"
+  "annotated_bibliography.upb"
   (rewritten before read)
+  "annotated_bibliography.upa"

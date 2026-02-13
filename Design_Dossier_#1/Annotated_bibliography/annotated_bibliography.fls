@@ -227,6 +227,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 OUTPUT annotated_bibliography.upa
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT annotated_bibliography.aux
+OUTPUT annotated_bibliography.upb
+INPUT ./annotated_bibliography.upa
+INPUT ./annotated_bibliography.upa
+INPUT annotated_bibliography.upa
 INPUT ./annotated_bibliography.out
 INPUT ./annotated_bibliography.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
