@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.23)  13 FEB 2026 13:11
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.23)  13 FEB 2026 13:04
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -606,15 +610,26 @@ Package rerunfilecheck Info: File `annotated_bibliography.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  17694 strings out of 467538
  310905 string characters out of 5423718
  737945 words of memory out of 5000000
  46364 multiletter control sequences out of 15000+600000
+=======
+ 17690 strings out of 467538
+ 310870 string characters out of 5423718
+ 737812 words of memory out of 5000000
+ 46362 multiletter control sequences out of 15000+600000
+>>>>>>> Stashed changes
  633391 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,5n,93p,1823b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+<<<<<<< Updated upstream
 Output written on annotated_bibliography.pdf (3 pages, 51359 bytes).
+=======
+Output written on annotated_bibliography.pdf (2 pages, 49009 bytes).
+>>>>>>> Stashed changes
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
