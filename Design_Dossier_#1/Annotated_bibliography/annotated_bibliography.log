@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.23)  13 FEB 2026 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.23)  13 FEB 2026 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -415,7 +415,29 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
-) (./annotated_bibliography.aux)
+) (./annotated_bibliography.aux
+
+./annotated_bibliography.aux:9: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 <
+     <<<<<< HEAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Label `Natural_Resources_Canada_2012' multiply defined.
+
+
+LaTeX Warning: Label `Copernicus_2024' multiply defined.
+
+
+LaTeX Warning: Label `Net_Zero_Insights_2025' multiply defined.
+
+)
 \openout1 = `annotated_bibliography.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -545,9 +567,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) [1
 
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 \openout3 = `annotated_bibliography.upa'.
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 40--42
 []$\OT1/cmr/m/n/12 https : / / netzeroinsights . com / resources / key-[]technologies-[]driving-[]eective-[]wild^^Lre-[]management /
  []
@@ -557,7 +580,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 \OT1/cmr/m/n/12 # : [] : text = Satellite % 20imaging % 20plays % 20a % 20pivotal ,[] dangerous % 20shifts % 20in % 20the %
  []
 
-) [2] (./annotated_bibliography.aux * soulpos - computing points - it may take a few seconds *
+
+Underfull \hbox (badness 1584) in paragraph at lines 48--48
+\OT1/cmr/m/n/12 cud-ing socio-economic, phys-i-cal health, men-tal health, in-fras-truc-ture, ecosys-
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 48--48
+\OT1/cmr/m/n/12 tems, and en-vi-ron-men-tal im-pacts. It also men-tions the health cost as-so-ci-
+ []
+
+[2]) [3] (./annotated_bibliography.aux * soulpos - computing points - it may take a few seconds *
 \openout3 = `annotated_bibliography.upb'.
 
  (./annotated_bibliography.upa))
@@ -565,22 +598,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `annotated_bibliography.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17690 strings out of 467538
- 310870 string characters out of 5423718
- 736812 words of memory out of 5000000
- 46362 multiletter control sequences out of 15000+600000
+ 17694 strings out of 467538
+ 310905 string characters out of 5423718
+ 737945 words of memory out of 5000000
+ 46364 multiletter control sequences out of 15000+600000
  633391 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,93p,1823b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,5n,93p,1823b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on annotated_bibliography.pdf (2 pages, 48748 bytes).
+Output written on annotated_bibliography.pdf (3 pages, 51359 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
+ 55 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
