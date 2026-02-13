@@ -1,8 +1,8 @@
-PWD c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography
+PWD c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex
+INPUT c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex
 OUTPUT annotated_bibliography.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/article.cls

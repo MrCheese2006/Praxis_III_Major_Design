@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex annotated_bibliography"] 1770956527.05325 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1770956531.02227 0
+["bibtex annotated_bibliography"] 1770959905.7362 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1770959908.84754 0
   "./IEEEannot.bst" 1770871748 61919 bf06423465058a2272d4ac4bdeb9eab7 ""
-  "./annotated_bibliography.bib" 1770956522 5274 9611f547da830e39342caf316e4aac77 ""
-  "annotated_bibliography.aux" 1770956529 416 a696f471227a679109a906505c8adbeb "pdflatex"
+  "./annotated_bibliography.bib" 1770959904 6319 2418607c7b7d76c72d1bde5340edbd9f ""
+  "annotated_bibliography.aux" 1770959907 416 a696f471227a679109a906505c8adbeb "pdflatex"
   (generated)
   "annotated_bibliography.bbl"
   "annotated_bibliography.blg"
   (rewritten before read)
-["pdflatex"] 1770956527.75118 "c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1770956531.02354 0
-  "annotated_bibliography.aux" 1770956529 416 a696f471227a679109a906505c8adbeb "pdflatex"
-  "annotated_bibliography.bbl" 1770956527 5936 6d876d2dcc371ba34f2ede3fedb478bf "bibtex annotated_bibliography"
-  "annotated_bibliography.out" 1770956528 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["pdflatex"] 1770959906.34025 "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1770959908.84814 0
+  "annotated_bibliography.aux" 1770959907 416 a696f471227a679109a906505c8adbeb "pdflatex"
+  "annotated_bibliography.bbl" 1770959906 7026 8a9481f0f3c655a7365757676788ad18 "bibtex annotated_bibliography"
+  "annotated_bibliography.out" 1770959907 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "annotated_bibliography.tex" 1770941032 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
-  "annotated_bibliography.upa" 1770956528 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "annotated_bibliography.upb" 1770956529 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "c:/U of T/Year 2/Sem 2/Praxis III/Major_Design_Project/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" 1770941032 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
+  "annotated_bibliography.upa" 1770959907 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "annotated_bibliography.upb" 1770959907 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" 1770941032 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1763878533 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1763877435 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1763872585 1004 54797486969f23fa377b128694d548df ""

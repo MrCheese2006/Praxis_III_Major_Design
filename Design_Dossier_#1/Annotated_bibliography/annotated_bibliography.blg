@@ -16,14 +16,14 @@ Database file #1: annotated_bibliography.bib
 Done.
 You've used 4 entries,
             4480 wiz_defined-function locations,
-            911 strings with 12685 characters,
-and the built_in function-call counts, 1924 in all, are:
+            912 strings with 13731 characters,
+and the built_in function-call counts, 1926 in all, are:
 = -- 163
 > -- 28
 < -- 0
 + -- 13
 - -- 8
-* -- 95
+* -- 97
 := -- 367
 add.period$ -- 8
 call.type$ -- 4
