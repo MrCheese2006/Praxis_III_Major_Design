@@ -218,8 +218,8 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT annotated_bibliography.upa
+INPUT c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT annotated_bibliography.aux
 OUTPUT annotated_bibliography.upb
 INPUT ./annotated_bibliography.upa

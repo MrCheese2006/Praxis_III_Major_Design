@@ -1,37 +1,20 @@
 # Fdb version 4
-<<<<<<< Updated upstream
-["bibtex annotated_bibliography"] 1771006296.61772 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1771006301.15957 0
+["bibtex annotated_bibliography"] 1771006411.64284 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1771006415.74294 0
   "./IEEEannot.bst" 1770871748 61919 bf06423465058a2272d4ac4bdeb9eab7 ""
   "./annotated_bibliography.bib" 1771006295 8882 585df5fb75c382e34b331d3db5c4a0bb ""
-  "annotated_bibliography.aux" 1771006299 466 928bc9ae1810b466134694187c85ae5d "pdflatex"
-=======
-["bibtex annotated_bibliography"] 1771005839.07342 "annotated_bibliography.aux" "annotated_bibliography.bbl" "annotated_bibliography" 1771005844.83759 0
-  "./IEEEannot.bst" 1770871748 61919 bf06423465058a2272d4ac4bdeb9eab7 ""
-  "./annotated_bibliography.bib" 1771005838 7369 d78d8ebdb6a777675880308af82edb8d ""
-  "annotated_bibliography.aux" 1771005843 445 0c81be9db4ca0a62cafb5712559e0287 "pdflatex"
->>>>>>> Stashed changes
+  "annotated_bibliography.aux" 1771006414 466 928bc9ae1810b466134694187c85ae5d "pdflatex"
   (generated)
   "annotated_bibliography.bbl"
   "annotated_bibliography.blg"
   (rewritten before read)
-<<<<<<< Updated upstream
-["pdflatex"] 1771006297.42154 "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1771006301.1604 2
-  "annotated_bibliography.aux" 1771006299 466 928bc9ae1810b466134694187c85ae5d "pdflatex"
-  "annotated_bibliography.bbl" 1771006297 9526 ba2c02d2d099fea585092c4c0aff1edb "bibtex annotated_bibliography"
-  "annotated_bibliography.out" 1771006299 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "annotated_bibliography.tex" 1771004552 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
-  "annotated_bibliography.upa" 1771006299 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "annotated_bibliography.upb" 1771006299 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-=======
-["pdflatex"] 1771005842.32483 "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1771005844.83816 0
-  "annotated_bibliography.aux" 1771005843 445 0c81be9db4ca0a62cafb5712559e0287 "pdflatex"
-  "annotated_bibliography.bbl" 1771005841 8110 65be5c6667bab23f9b2180c593454720 "bibtex annotated_bibliography"
-  "annotated_bibliography.out" 1771005843 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "annotated_bibliography.tex" 1771004552 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
-  "annotated_bibliography.upa" 1771005843 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "annotated_bibliography.upb" 1771005843 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
->>>>>>> Stashed changes
-  "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" 1771004552 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
+["pdflatex"] 1771006412.40673 "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" "annotated_bibliography.pdf" "annotated_bibliography" 1771006415.74443 0
+  "annotated_bibliography.aux" 1771006414 466 928bc9ae1810b466134694187c85ae5d "pdflatex"
+  "annotated_bibliography.bbl" 1771006412 9526 ba2c02d2d099fea585092c4c0aff1edb "bibtex annotated_bibliography"
+  "annotated_bibliography.out" 1771006413 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "annotated_bibliography.tex" 1771006410 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
+  "annotated_bibliography.upa" 1771006413 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "annotated_bibliography.upb" 1771006414 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Annotated_bibliography/annotated_bibliography.tex" 1771006410 687 d92e16d397a9f59764537f3ff5ca3ad7 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1763878533 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1763877435 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1763872585 1004 54797486969f23fa377b128694d548df ""
