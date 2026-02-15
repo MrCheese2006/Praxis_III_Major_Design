@@ -8,6 +8,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{ulem}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep = 0pt} % parsep, topsep, partosep also options
 \usepackage{setspace}
 \usepackage{indentfirst}
 \usepackage{ragged2e}
