@@ -8,6 +8,7 @@ const int LED_PIN = 15;
 RH_ASK driver(2000, 16, 255, 255, false);
 
 void setup() {
+  //driver.init();
   Serial.begin(9600);
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, LOW);
@@ -30,8 +31,8 @@ void loop() {
     if (strcmp((char *)buf, "Fire") == 0) {
       digitalWrite(LED_PIN, HIGH);
       ledActive = true;
-      ledOFFTime = millis() + 1000; // Keep LED on for 1 second
-      Serial.print("Received msg.");
+      ledOffTime = millis() + 1000; // Keep LED on for 1 second
+      Serial.println("Received msg.");
     }
   }
   if (ledActive && millis() > ledOffTime) {
