@@ -1,33 +1,41 @@
 #include <RH_ASK.h>
 #include <SPI.h>
 
-RH_ASK driver;
+const int LED_PIN = 15;
 
-const int ledPin = 13;
+// RH_ASK(speed, rxPin, txPin, pttPin, pttInverted)
+// receiver uses GPIO 16
+RH_ASK driver(2000, 16, 255, 255, false);
 
 void setup() {
   Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
 
   if (!driver.init()) {
     Serial.println("RF init failed");
+  } else {
+    Serial.println("Receiver ready");
   }
 }
 
-void loop() {
+unsigned long ledOffTime = 0;
+bool ledActive = false;
 
+void loop() {
   uint8_t buf[RH_ASK_MAX_MESSAGE_LEN];
   uint8_t buflen = sizeof(buf);
 
   if (driver.recv(buf, &buflen)) {
-
-    Serial.print("Received: ");
-    Serial.println((char*)buf);
-
-    if (strcmp((char*)buf, "BUTTON") == 0) {
-      digitalWrite(ledPin, HIGH);
-      delay(500);
-      digitalWrite(ledPin, LOW);
+    if (strcmp((char *)buf, "Fire") == 0) {
+      digitalWrite(LED_PIN, HIGH);
+      ledActive = true;
+      ledOFFTime = millis() + 1000; // Keep LED on for 1 second
+      Serial.print("Received msg.");
     }
+  }
+  if (ledActive && millis() > ledOffTime) {
+    digitalWrite(LED_PIN, LOW);
+    ledActive = false;
   }
 }

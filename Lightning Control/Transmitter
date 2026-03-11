@@ -1,26 +1,37 @@
 #include <RH_ASK.h>
 #include <SPI.h>
 
+const int BUTTON_PIN = 15;
 
-RH_ASK driver;
-
-const int buttonPin = 2;
+// RH_ASK(speed, rxPin, txPin, pttPin, pttInverted)
+// transmitter only, so rxPin is unused here
+RH_ASK driver(2000, 255, 16, 255, false);
 
 void setup() {
   Serial.begin(9600);
-  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
 
   if (!driver.init()) {
     Serial.println("RF init failed");
+  } else {
+    Serial.println("Transmitter ready");
   }
 }
 
 void loop() {
-  if (digitalRead(buttonPin) == LOW) {
-    const char *msg = "Button";
+  static bool lastButtonState = HIGH;
+  bool buttonState = digitalRead(BUTTON_PIN);
+
+  // Send once when button is pressed
+  if (lastButtonState == HIGH && buttonState == LOW) {
+    const char *msg = "Fire";
+
     driver.send((uint8_t *)msg, strlen(msg) + 1);
     driver.waitPacketSent();
-    Serial.println("Sent");
-    delay(1000); // Debounce delay
+
+    Serial.println("Sent: Fire");
+    delay(200); // debounce
   }
+
+  lastButtonState = buttonState;
 }
