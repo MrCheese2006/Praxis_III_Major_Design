@@ -1,0 +1,10 @@
+#include <>
+
+const int AIN1;
+const int AIN2;
+const int SLP;
+const float Speed_CM;
+
+void Distance(float target, int pwm) {
+    
+}

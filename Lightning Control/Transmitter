@@ -8,6 +8,7 @@ const int BUTTON_PIN = 15;
 RH_ASK driver(2000, 255, 16, 255, false);
 
 void setup() {
+  // driver.init();
   Serial.begin(9600);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 
@@ -26,8 +27,11 @@ void loop() {
   if (lastButtonState == HIGH && buttonState == LOW) {
     const char *msg = "Fire";
 
-    driver.send((uint8_t *)msg, strlen(msg) + 1);
-    driver.waitPacketSent();
+    for (int i = 0; i < 5; i++) {
+      driver.send((uint8_t *)msg, strlen(msg) + 1);
+      driver.waitPacketSent();
+      delay(50);
+    }
 
     Serial.println("Sent: Fire");
     delay(200); // debounce
