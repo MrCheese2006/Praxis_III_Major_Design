@@ -1,10 +1,22 @@
-#include <>
+#include <iostream>
+#include <numbers>
+// #include <Quran.h> I need god for this
 
+// initialize pins
 const int AIN1;
 const int AIN2;
 const int SLP;
-const float Speed_CM;
+const int Interrupt;
 
-void Distance(float target, int pwm) {
-    
+const float Diameter = 67.0;
+const float Circumfrance = std::numbers::pi * Diameter;
+const float Rev_Count = 823.1;
+
+volatile long encoderCount = 0;
+
+
+long Distance(float target) {
+    float revs = target/Circumfrance;
+    return (long)(revs * Rev_Count);
 }
+
