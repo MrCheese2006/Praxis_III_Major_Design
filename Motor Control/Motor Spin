@@ -3,10 +3,10 @@
 // #include <Quran.h> I need god for this
 
 // initialize pins
-const int AIN1;
-const int AIN2;
-const int SLP;
-const int Interrupt;
+const int AIN1 = 5;
+const int AIN2 = 6;
+const int SLP  = 7;
+const int ENCA = 2;
 
 const float Diameter = 67.0;
 const float Circumfrance = std::numbers::pi * Diameter;
@@ -14,9 +14,43 @@ const float Rev_Count = 823.1;
 
 volatile long encoderCount = 0;
 
+void encoderISR() {
+  encoderCount++;
+}
+
+void setup() {
+  pinMode(AIN1, OUTPUT);
+  pinMode(AIN2, OUTPUT);
+  pinMode(SLP, OUTPUT);
+
+  pinMode(ENCA, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(ENCA), encoderISR, RISING);
+
+  digitalWrite(SLP, HIGH);
+  Serial.begin(115200);
+}
+
+void stopMotor() {
+  analogWrite(AIN1, 0);
+  analogWrite(AIN2, 0);
+}
 
 long Distance(float target) {
     float revs = target/Circumfrance;
     return (long)(revs * Rev_Count);
 }
 
+void moveForwardDistance(float target, int pwm) {
+  long targetCounts = Distance(target);
+  encoderCount = 0;
+
+  Serial.print("Target counts: ");
+  Serial.println(targetCounts);
+
+  // Forward
+  digitalWrite(AIN2, LOW);
+  analogWrite(AIN1, pwm);
+
+  while (encoderCount < targetCounts) {
+    // wait until target reached
+  }
