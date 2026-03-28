@@ -67,5 +67,6 @@ bool read_dht22(float *temp, float *rh) {
         *temp = raw_temp / 10.0;
     }
 
+    printf("Relative Humidity: %f \n Temperature (C): %f \n", rh, temp);
     return true;
 }
