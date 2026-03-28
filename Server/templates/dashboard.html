@@ -233,7 +233,7 @@
 </div>
 
 <!-- ── Device cards ────────────────────────────────────────────── -->
-<div class="grid-3">
+<div class="grid-2">
   <div class="card">
     <div class="card-title">Receiver Pico W</div>
     <div class="device-status"><span id="recv-dot" class="dot offline"></span><span id="recv-status">OFFLINE</span></div>
@@ -248,14 +248,6 @@
     <div class="device-meta">
       <div id="car-ip">IP: &mdash;</div>
       <div id="car-seen">Last seen: &mdash;</div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-title">Auxiliary Pico W</div>
-    <div class="device-status"><span id="aux-dot" class="dot offline"></span><span id="aux-status">OFFLINE</span></div>
-    <div class="device-meta">
-      <div id="aux-ip">IP: &mdash;</div>
-      <div id="aux-seen">Last seen: &mdash;</div>
     </div>
   </div>
 </div>
@@ -423,7 +415,7 @@ async function poll() {
 }
 
 function updateDevices(devs) {
-  const map = { receiver: 'recv', car: 'car', aux: 'aux' };
+  const map = { receiver: 'recv', car: 'car' };
   for (const [id, pfx] of Object.entries(map)) {
     const dev = devs[id];
     if (!dev) continue;

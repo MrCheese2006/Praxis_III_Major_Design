@@ -1,6 +1,6 @@
 """
 Control Center Server — Unified Flask Backend
-Connects: Receiver Pico W, Robot Car Pico W, Auxiliary Pico W
+Connects: Receiver Pico W, Robot Car Pico W
 
 Run:      python app.py
 Dashboard: http://localhost:5000
@@ -20,7 +20,7 @@ app = Flask(__name__)
 # CONFIGURATION
 # ─────────────────────────────────────────────────────────────────
 FIRE_HUMIDITY_THRESHOLD = 30.0   # % RH — below this = fire risk
-DEVICE_TIMEOUT_SECONDS  = 15     # seconds of silence before device = offline
+DEVICE_TIMEOUT_SECONDS  = 30     # seconds of silence before device = offline
 MAX_LOG_ENTRIES         = 50
 MAX_LIGHTNING_EVENTS    = 20
 
@@ -38,12 +38,9 @@ DEFAULT_TARGET = {"angle_deg": 0.0, "distance_mm": 1000.0}
 # ─────────────────────────────────────────────────────────────────
 _lock = threading.Lock()
 
-# Registry of known Pico W devices.
-# "aux" is the third Pico W slot — purpose to be determined by team.
 devices = {
     "receiver": {"last_seen": None, "ip": None, "online": False},
     "car":      {"last_seen": None, "ip": None, "online": False},
-    "aux":      {"last_seen": None, "ip": None, "online": False},
 }
 
 lightning_events = []  # [{"timestamp", "signal", "rssi"}]
