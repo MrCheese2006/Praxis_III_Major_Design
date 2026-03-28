@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-PWD c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Design_Concept_Overview
-INPUT c:/texlive/2025/texmf.cnf
-INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
-INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/U of T/Year 2/Sem 2/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Design_Concept_Overview/design_concept_overview.tex
-=======
 PWD c:/Users/jedim/Documents/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Design_Concept_Overview
 INPUT c:/texlive/2025/texmf.cnf
 INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/jedim/Documents/Praxis III/Praxis_III_Major_Design/Design_Dossier_#1/Design_Concept_Overview/design_concept_overview.tex
->>>>>>> e74f6ef84a8542298f1cc2a5448aba5423626673
 OUTPUT design_concept_overview.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -62,11 +54,8 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT c:/texlive/2025/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT c:/texlive/2025/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
-<<<<<<< HEAD
 INPUT c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
-=======
->>>>>>> e74f6ef84a8542298f1cc2a5448aba5423626673
 INPUT c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
@@ -172,9 +161,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./design_concept_overview.aux
-INPUT ./design_concept_overview.aux
-INPUT design_concept_overview.aux
 OUTPUT design_concept_overview.aux
 INPUT c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -192,14 +178,13 @@ INPUT c:/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
 INPUT c:/texlive/2025/texmf-dist/tex/generic/soul/soul-ori.sty
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT design_concept_overview.upb
-INPUT ./design_concept_overview.out
-INPUT ./design_concept_overview.out
-INPUT design_concept_overview.out
-INPUT design_concept_overview.out
-OUTPUT design_concept_overview.pdf
-INPUT ./design_concept_overview.out
-INPUT ./design_concept_overview.out
 OUTPUT design_concept_overview.out
+OUTPUT design_concept_overview.pdf
+INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT design_concept_overview.upa
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -221,39 +206,11 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT c:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-OUTPUT design_concept_overview.upa
-INPUT c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-<<<<<<< HEAD
-INPUT ./design_concept_overview.toc
-INPUT ./design_concept_overview.toc
-INPUT design_concept_overview.toc
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT design_concept_overview.toc
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
-=======
->>>>>>> e74f6ef84a8542298f1cc2a5448aba5423626673
 INPUT ./design_concept_overview.bbl
 INPUT ./design_concept_overview.bbl
 INPUT design_concept_overview.bbl
@@ -266,4 +223,5 @@ INPUT ./design_concept_overview.out
 INPUT ./design_concept_overview.out
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
