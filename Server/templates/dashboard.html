@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Fire Detection — Control Center</title>
+  <style>
+    :root {
+      --bg:      #0a0a0a;
+      --surface: #111111;
+      --border:  #222222;
+      --green:   #00ff88;
+      --red:     #ff4444;
+      --yellow:  #ffcc00;
+      --dim:     #555555;
+      --text:    #cccccc;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      padding: 20px 24px;
+      min-height: 100vh;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 15px; color: var(--green); letter-spacing: 1px; margin-bottom: 4px; }
+    .subtitle { color: var(--dim); font-size: 11px; }
+    .header-badges { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+
+    /* ── Layout grids ────────────────────────────────── */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 14px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+
+    /* ── Cards ───────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 14px 16px;
+    }
+    .card-title {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 12px;
+    }
+
+    /* ── Status dot ──────────────────────────────────── */
+    .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: middle;
+      background: var(--dim);
+    }
+    .dot.online  { background: var(--green); box-shadow: 0 0 6px var(--green); }
+    .dot.offline { background: var(--dim); }
+
+    /* ── Device card details ─────────────────────────── */
+    .device-status { font-size: 13px; margin-bottom: 6px; }
+    .device-meta   { font-size: 11px; color: var(--dim); line-height: 1.6; }
+
+    /* ── Badges ──────────────────────────────────────── */
+    .badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 10px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .badge-green  { border: 1px solid var(--green);  color: var(--green);  background: rgba(0,255,136,0.07); }
+    .badge-yellow { border: 1px solid var(--yellow); color: var(--yellow); background: rgba(255,204,0,0.07); }
+    .badge-red    { border: 1px solid var(--red);    color: var(--red);    background: rgba(255,68,68,0.07); }
+    .badge-dim    { border: 1px solid var(--dim);    color: var(--dim);    background: transparent; }
+
+    /* ── Car status grid ─────────────────────────────── */
+    .car-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      margin-bottom: 12px;
+    }
+    .car-metric .label { font-size: 10px; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+    .car-metric .value { font-size: 16px; color: var(--green); }
+    .car-metric .value.na { color: var(--dim); font-size: 13px; }
+
+    #car-status-text {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* ── Fire result banner ──────────────────────────── */
+    .fire-banner {
+      padding: 10px 14px;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .fire-banner.fire    { border: 1px solid var(--red);   color: var(--red);   background: rgba(255,68,68,0.08); }
+    .fire-banner.clear   { border: 1px solid var(--green); color: var(--green); background: rgba(0,255,136,0.06); }
+    .fire-banner.unknown { display: none; }
+
+    /* ── Event / log lists ───────────────────────────── */
+    .event-list { max-height: 180px; overflow-y: auto; }
+    .event-item {
+      display: flex;
+      gap: 10px;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .event-item:last-child { border-bottom: none; }
+    .ts { color: var(--dim); white-space: nowrap; flex-shrink: 0; }
+    .empty-note { color: var(--dim); font-size: 11px; font-style: italic; }
+
+    /* ── Controls ────────────────────────────────────── */
+    .control-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .control-row label { color: var(--dim); font-size: 11px; min-width: 130px; }
+
+    input[type="number"] {
+      background: #1a1a1a;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: 13px;
+      width: 110px;
+      border-radius: 3px;
+      -moz-appearance: textfield;
+    }
+    input[type="number"]:focus { outline: 1px solid var(--green); border-color: var(--green); }
+
+    button {
+      background: transparent;
+      border: 1px solid var(--green);
+      color: var(--green);
+      padding: 7px 16px;
+      font-family: inherit;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      transition: background 0.1s;
+    }
+    button:hover  { background: rgba(0,255,136,0.1); }
+    button:active { background: rgba(0,255,136,0.2); }
+
+    button.warn {
+      border-color: var(--yellow);
+      color: var(--yellow);
+    }
+    button.warn:hover { background: rgba(255,204,0,0.1); }
+
+    .feedback {
+      font-size: 11px;
+      color: var(--dim);
+      min-height: 16px;
+      margin-top: 4px;
+    }
+    .feedback.ok  { color: var(--green); }
+    .feedback.err { color: var(--red); }
+
+    .preset-note {
+      font-size: 11px;
+      color: var(--dim);
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .preset-note span { color: var(--text); }
+
+    /* ── System log ──────────────────────────────────── */
+    .log-list { max-height: 160px; overflow-y: auto; }
+    .log-item {
+      display: flex;
+      gap: 10px;
+      padding: 4px 0;
+      border-bottom: 1px solid #181818;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    .log-item:last-child { border-bottom: none; }
+
+    /* ── Scrollbar styling ───────────────────────────── */
+    ::-webkit-scrollbar       { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────── -->
+<div class="header">
+  <div>
+    <h1>FOREST FIRE DETECTION &mdash; CONTROL CENTER</h1>
+    <div class="subtitle">
+      Polling every 2s &nbsp;&middot;&nbsp; Last update: <span id="last-poll">&mdash;</span>
+    </div>
+  </div>
+  <div class="header-badges">
+    <span id="badge-dispatch" class="badge badge-dim">&mdash;</span>
+    <span id="badge-server"   class="badge badge-green">SERVER ONLINE</span>
+  </div>
+</div>
+
+<!-- ── Device cards ────────────────────────────────────────────── -->
+<div class="grid-3">
+  <div class="card">
+    <div class="card-title">Receiver Pico W</div>
+    <div class="device-status"><span id="recv-dot" class="dot offline"></span><span id="recv-status">OFFLINE</span></div>
+    <div class="device-meta">
+      <div id="recv-ip">IP: &mdash;</div>
+      <div id="recv-seen">Last seen: &mdash;</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Robot Car Pico W</div>
+    <div class="device-status"><span id="car-dot" class="dot offline"></span><span id="car-dev-status">OFFLINE</span></div>
+    <div class="device-meta">
+      <div id="car-ip">IP: &mdash;</div>
+      <div id="car-seen">Last seen: &mdash;</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Auxiliary Pico W</div>
+    <div class="device-status"><span id="aux-dot" class="dot offline"></span><span id="aux-status">OFFLINE</span></div>
+    <div class="device-meta">
+      <div id="aux-ip">IP: &mdash;</div>
+      <div id="aux-seen">Last seen: &mdash;</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Lightning events + Car status ───────────────────────────── -->
+<div class="grid-2">
+
+  <div class="card">
+    <div class="card-title">&#x26A1; Lightning / Fire Signal Events</div>
+    <div class="event-list" id="lightning-log">
+      <div class="empty-note">No events received yet.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">&#x1F697; Robot Car Status</div>
+    <div id="car-status-text" style="color: var(--dim)">IDLE</div>
+    <div class="car-grid">
+      <div class="car-metric">
+        <div class="label">Angle</div>
+        <div class="value na" id="val-angle">&mdash;</div>
+      </div>
+      <div class="car-metric">
+        <div class="label">Distance</div>
+        <div class="value na" id="val-dist">&mdash;</div>
+      </div>
+      <div class="car-metric">
+        <div class="label">Humidity</div>
+        <div class="value na" id="val-humidity">&mdash;</div>
+      </div>
+      <div class="car-metric">
+        <div class="label">Temperature</div>
+        <div class="value na" id="val-temp">&mdash;</div>
+      </div>
+    </div>
+    <div id="fire-banner" class="fire-banner unknown"></div>
+    <div class="device-meta" style="margin-top:8px" id="car-updated">Updated: &mdash;</div>
+  </div>
+
+</div>
+
+<!-- ── Dispatch controls ────────────────────────────────────────── -->
+<div class="card" style="margin-bottom: 14px">
+  <div class="card-title">Dispatch Control</div>
+
+  <div class="control-row">
+    <label>Angle (degrees)</label>
+    <input type="number" id="angle-input" value="0" step="1" min="-360" max="360">
+    <label>Distance (mm)</label>
+    <input type="number" id="dist-input"  value="1000" step="100" min="0">
+  </div>
+
+  <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top: 4px;">
+    <button onclick="savePreset()">Save as Preset</button>
+    <button onclick="sendCar()">&#x25B6;&nbsp; Send Car</button>
+    <button class="warn" onclick="returnCar()">&#x21A9;&nbsp; Return Home</button>
+  </div>
+
+  <div id="dispatch-feedback" class="feedback"></div>
+
+  <div class="preset-note">
+    Saved preset &mdash;
+    angle: <span id="preset-angle-disp">0</span>&deg; &nbsp;/&nbsp;
+    dist:  <span id="preset-dist-disp">1000</span>&nbsp;mm
+    &nbsp;&middot;&nbsp; "Send Car" with empty fields uses the preset.
+  </div>
+</div>
+
+<!-- ── System log ────────────────────────────────────────────────── -->
+<div class="card">
+  <div class="card-title">System Log</div>
+  <div class="log-list" id="system-log">
+    <div class="empty-note">No events.</div>
+  </div>
+</div>
+
+
+<!-- ── JavaScript ───────────────────────────────────────────────── -->
+<script>
+// ─── Generic API wrapper ────────────────────────────────────────
+async function api(path, method = 'GET', body = null) {
+  const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  if (body !== null) opts.body = JSON.stringify(body);
+  const r = await fetch(path, opts);
+  return r.json();
+}
+
+// ─── Operator actions ───────────────────────────────────────────
+async function sendCar() {
+  const angle = document.getElementById('angle-input').value;
+  const dist  = document.getElementById('dist-input').value;
+  // Send custom values if provided, otherwise the server uses its saved preset
+  const body  = (angle !== '' && dist !== '')
+    ? { angle_deg: parseFloat(angle), distance_mm: parseFloat(dist) }
+    : {};
+  try {
+    const res = await api('/api/dispatch', 'POST', body);
+    feedback(res.status === 'dispatched'
+      ? `Car dispatched — ${res.target.angle_deg}deg / ${res.target.distance_mm}mm`
+      : 'Error dispatching.', res.status === 'dispatched');
+  } catch { feedback('Network error.', false); }
+}
+
+async function returnCar() {
+  try {
+    const res = await api('/api/car/return', 'POST');
+    feedback(res.status === 'ok' ? 'Return-home command sent.' : 'Error.', res.status === 'ok');
+  } catch { feedback('Network error.', false); }
+}
+
+async function savePreset() {
+  const angle = parseFloat(document.getElementById('angle-input').value);
+  const dist  = parseFloat(document.getElementById('dist-input').value);
+  if (isNaN(angle) || isNaN(dist)) { feedback('Enter valid numbers first.', false); return; }
+  try {
+    const res = await api('/api/target', 'POST', { angle_deg: angle, distance_mm: dist });
+    if (res.status === 'ok') {
+      document.getElementById('preset-angle-disp').textContent = angle;
+      document.getElementById('preset-dist-disp').textContent  = dist;
+      feedback('Preset saved.', true);
+    }
+  } catch { feedback('Network error.', false); }
+}
+
+let feedbackTimer = null;
+function feedback(msg, ok) {
+  const el = document.getElementById('dispatch-feedback');
+  el.textContent  = msg;
+  el.className    = 'feedback ' + (ok ? 'ok' : 'err');
+  clearTimeout(feedbackTimer);
+  feedbackTimer = setTimeout(() => { el.textContent = ''; el.className = 'feedback'; }, 4000);
+}
+
+// ─── Status polling ─────────────────────────────────────────────
+async function poll() {
+  try {
+    const d = await api('/api/status');
+    updateDevices(d.devices);
+    updateLightning(d.lightning_events);
+    updateCar(d.car);
+    updateLog(d.system_log);
+    syncPreset(d.car);
+
+    // Dispatch mode badge
+    const b = document.getElementById('badge-dispatch');
+    if (d.auto_dispatch) {
+      b.textContent = 'AUTO-DISPATCH ON';
+      b.className   = 'badge badge-yellow';
+    } else {
+      b.textContent = 'MANUAL DISPATCH';
+      b.className   = 'badge badge-dim';
+    }
+
+    document.getElementById('last-poll').textContent = new Date().toLocaleTimeString();
+
+    // Restore server online badge
+    const sb = document.getElementById('badge-server');
+    sb.textContent = 'SERVER ONLINE';
+    sb.className   = 'badge badge-green';
+  } catch {
+    const sb = document.getElementById('badge-server');
+    sb.textContent = 'SERVER OFFLINE';
+    sb.className   = 'badge badge-red';
+  }
+}
+
+function updateDevices(devs) {
+  const map = { receiver: 'recv', car: 'car', aux: 'aux' };
+  for (const [id, pfx] of Object.entries(map)) {
+    const dev = devs[id];
+    if (!dev) continue;
+    const statusId = pfx === 'car' ? 'car-dev-status' : pfx + '-status';
+    document.getElementById(pfx + '-dot').className    = 'dot ' + (dev.online ? 'online' : 'offline');
+    document.getElementById(statusId).textContent      = dev.online ? 'ONLINE' : 'OFFLINE';
+    document.getElementById(pfx + '-ip').textContent   = 'IP: ' + (dev.ip || '—');
+    document.getElementById(pfx + '-seen').textContent = 'Last seen: ' + (dev.last_seen || '—');
+  }
+}
+
+function updateLightning(events) {
+  const el = document.getElementById('lightning-log');
+  if (!events || events.length === 0) {
+    el.innerHTML = '<div class="empty-note">No events received yet.</div>';
+    return;
+  }
+  el.innerHTML = [...events].reverse().map(e => {
+    const rssi = e.rssi != null ? ` &nbsp; RSSI&nbsp;${e.rssi}` : '';
+    return `<div class="event-item">
+      <span class="ts">${e.timestamp}</span>
+      <span>${e.signal || 'Fire'}${rssi}</span>
+    </div>`;
+  }).join('');
+}
+
+const STATUS_COLORS = {
+  idle:          'var(--dim)',
+  dispatched:    'var(--yellow)',
+  investigating: 'var(--yellow)',
+  returning:     'var(--yellow)',
+  home:          'var(--green)',
+  fire_alert:    'var(--red)',
+};
+
+function updateCar(car) {
+  if (!car) return;
+
+  const statusEl = document.getElementById('car-status-text');
+  statusEl.textContent  = car.status.replace('_', ' ').toUpperCase();
+  statusEl.style.color  = STATUS_COLORS[car.status] || 'var(--text)';
+
+  setVal('val-angle',    car.position?.angle_deg   != null ? car.position.angle_deg + '°'    : null);
+  setVal('val-dist',     car.position?.distance_mm != null ? car.position.distance_mm + ' mm' : null);
+  setVal('val-humidity', car.humidity_pct  != null ? car.humidity_pct.toFixed(1)  + ' %'    : null);
+  setVal('val-temp',     car.temperature_c != null ? car.temperature_c.toFixed(1) + ' °C'   : null);
+
+  const banner = document.getElementById('fire-banner');
+  if (car.fire_detected === true) {
+    banner.textContent = 'FIRE RISK DETECTED';
+    banner.className   = 'fire-banner fire';
+  } else if (car.fire_detected === false) {
+    banner.textContent = 'NO FIRE — LOCATION CLEAR';
+    banner.className   = 'fire-banner clear';
+  } else {
+    banner.className   = 'fire-banner unknown';
+  }
+
+  document.getElementById('car-updated').textContent = 'Updated: ' + (car.last_updated || '—');
+}
+
+function setVal(id, value) {
+  const el = document.getElementById(id);
+  if (value != null) {
+    el.textContent = value;
+    el.className   = 'value';
+  } else {
+    el.textContent = '—';
+    el.className   = 'value na';
+  }
+}
+
+function updateLog(logs) {
+  const el = document.getElementById('system-log');
+  if (!logs || logs.length === 0) {
+    el.innerHTML = '<div class="empty-note">No events.</div>';
+    return;
+  }
+  el.innerHTML = [...logs].reverse().map(l =>
+    `<div class="log-item"><span class="ts">${l.timestamp}</span><span>${l.message}</span></div>`
+  ).join('');
+}
+
+function syncPreset(car) {
+  if (!car?.target) return;
+  document.getElementById('preset-angle-disp').textContent = car.target.angle_deg;
+  document.getElementById('preset-dist-disp').textContent  = car.target.distance_mm;
+}
+
+// ─── Start ──────────────────────────────────────────────────────
+poll();
+setInterval(poll, 2000);
+</script>
+</body>
+</html>
