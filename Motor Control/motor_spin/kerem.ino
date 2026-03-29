@@ -1,0 +1,147 @@
+#include <iostream>
+#include <numbers>
+// #include <Quran.h> I need god for this
+
+// initialize pins
+const int L_AIN1 = 19;
+const int L_AIN2 = 17; 
+const int L_SLP  = 22;
+
+const int R_AIN1 = 14;
+const int R_AIN2 = 13;
+const int R_SLP  = 5;
+
+const int L_ENCA = 21;
+const int R_ENCA = 10;
+
+
+const float Diameter = 67.0;
+const float Pie = 3.14159265;
+const float Circumference = Pie * Diameter;
+const float Rev_Count = 823.1;
+
+volatile long leftCount = 0;
+volatile long rightCount = 0;
+
+void leftEncoderISR() {
+  leftCount++;
+}
+
+void rightEncoderISR() {
+  rightCount++;
+}
+
+long distanceToCounts(float distance_mm) {
+  float revs = distance_mm / Diameter / Pie;
+  return (long)((distance_mm / Circumference) * Rev_Count);
+}
+
+void stopLeft() {
+  analogWrite(L_AIN1, 0);
+  analogWrite(L_AIN2, 0);
+}
+
+void stopRight() {
+  analogWrite(R_AIN1, 0);
+  analogWrite(R_AIN2, 0);
+}
+
+void stopAll() {
+  stopLeft();
+  stopRight();
+}
+
+void setLeftForward(int pwm) {
+  digitalWrite(L_AIN2, LOW);
+  analogWrite(L_AIN1, pwm);
+}
+
+void setRightForward(int pwm) {
+  digitalWrite(R_AIN2, LOW);
+  analogWrite(R_AIN1, pwm);
+}
+
+void setLeftBackward(int pwm) {
+  digitalWrite(L_AIN1, LOW);
+  analogWrite(L_AIN2, pwm);
+}
+
+void setRightBackward(int pwm) {
+  digitalWrite(R_AIN1, LOW);
+  analogWrite(R_AIN2, pwm);
+}
+
+void setup() {
+  pinMode(L_AIN1, OUTPUT);
+  pinMode(L_AIN2, OUTPUT);
+  pinMode(L_SLP, OUTPUT);
+
+  pinMode(R_AIN1, OUTPUT);
+  pinMode(R_AIN2, OUTPUT);
+  pinMode(R_SLP, OUTPUT);
+
+  pinMode(L_ENCA, INPUT_PULLUP);
+  pinMode(R_ENCA, INPUT_PULLUP);
+
+  attachInterrupt(digitalPinToInterrupt(L_ENCA), leftEncoderISR, RISING);
+  attachInterrupt(digitalPinToInterrupt(R_ENCA), rightEncoderISR, RISING);
+
+  digitalWrite(L_SLP, HIGH);
+  digitalWrite(R_SLP, HIGH);
+
+  analogWriteFreq(20000);
+  analogWriteRange(255);
+
+  Serial.begin(115200);
+  delay(1000);
+  Serial.println("Two-motor distance control");
+}
+
+void moveForwardDistance(float distance_mm, int basePwm) {
+  long target = distanceToCounts(distance_mm);
+  leftCount = 0;
+  rightCount = 0;
+
+  unsigned long startTime = millis();
+  const unsigned long timeoutMs = 8000;
+
+  while (true) {
+    long l, r;
+    noInterrupts();
+    l = leftCount;
+    r = rightCount;
+    interrupts();
+
+    if (l >= target && r >= target) {
+      break;
+    }
+
+    if (millis() - startTime > timeoutMs) {
+      Serial.println("Timeout");
+      break;
+    }
+
+    int leftPwm = basePwm;
+    int rightPwm = basePwm;
+
+    if (l > r + 5) {
+      leftPwm = basePwm - 10;
+      rightPwm = basePwm + 10;
+    } else if (r > l + 5) {
+      leftPwm = basePwm + 10;
+      rightPwm = basePwm - 10;
+    }
+
+    // slow down near target to reduce overshoot
+    if (l > target * 0.8) leftPwm = min(leftPwm, basePwm / 2);
+    if (r > target * 0.8) rightPwm = min(rightPwm, basePwm / 2);
+
+    if (l < target) setLeftForward(leftPwm);
+    else stopLeft();
+
+    if (r < target) setRightForward(rightPwm);
+    else stopRight();
+  }
+
+  stopAll();
+}
